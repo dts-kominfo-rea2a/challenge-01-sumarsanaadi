@@ -9,7 +9,7 @@ User data structure and type :
     age: Number,
     email: String,
     favoriteColor: Array,
-    isHavePet: String,
+    isHavePet: Boolean,
     education: Array,
     favoriteRestaurant: Array
 */
@@ -21,10 +21,10 @@ const firstUser = {
   age: 17,
   email: "monica@dingdong.com",
   favoriteColor: [...new Set(["Yellow", "Pink", "White", "Purple"])],
-  isHavePet: "Yes",
+  isHavePet: true,
   education: [
-    { name: "SD 01", city: "Jakarta", graduate: "2016" },
-    { name: "SMP 02", city: "Jakarta", graduate: "2019" },
+    { name: "SD 01", city: "Jakarta", graduate: 2016 },
+    { name: "SMP 02", city: "Jakarta", graduate: 2019 },
     { name: "SMA 03", city: "Tangerang" },
   ],
   favoriteRestaurant: [
@@ -51,11 +51,11 @@ const secondUser = {
   age: 23,
   email: "wendy@dingdong.com",
   favoriteColor: [...new Set(["Blue", "Black", "Grey"])],
-  isHavePet: "No",
+  isHavePet: false,
   education: [
-    { name: "SD 02", city: "Jakarta", graduate: "2010" },
-    { name: "SMP 03", city: "Bogor", graduate: "2013" },
-    { name: "SMA 01", city: "Surabaya", graduate: "2016" },
+    { name: "SD 02", city: "Jakarta", graduate: 2010 },
+    { name: "SMP 03", city: "Bogor", graduate: 2013 },
+    { name: "SMA 01", city: "Surabaya", graduate: 2016 },
     { name: "Universitas Maju", city: "Tangerang" },
   ],
   favoriteRestaurant: [
